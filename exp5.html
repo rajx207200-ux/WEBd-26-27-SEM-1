@@ -1,0 +1,103 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h1 align="center">Student Registration Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password"
+                   name="password" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <br><br>
+
+            <label for="phone">Mobile Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter mobile number">
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+
+            <label for="course">Select Course:</label>
+            <select id="course" name="course">
+                <option value="">--Select Course--</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="MCA">MCA</option>
+            </select>
+            <br><br>
+
+            <label for="branch">Select Branch:</label>
+            <select id="branch" name="branch">
+                <option value="">--Select Branch--</option>
+                <option value="ECE">Electronics and Communication</option>
+                <option value="CSE">Computer Science</option>
+                <option value="ME">Mechanical Engineering</option>
+                <option value="EE">Electrical Engineering</option>
+            </select>
+            <br><br>
+
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" name="roll">
+            <br><br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address"
+                      rows="4" cols="30"
+                      placeholder="Enter your address"></textarea>
+            <br><br>
+        </fieldset>
+
+        <br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions.</label>
+
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
